@@ -63,44 +63,28 @@ namespace DevelopmentChallenge.Data.Classes
             return sb.ToString();
         }
 
-        private static string ObtenerLinea(int cantidad, decimal area, decimal perimetro, string tipo, IdiomaEnum idioma)
+        public static string ObtenerLinea(int cantidad, decimal area, decimal perimetro, string tipo, IdiomaEnum idioma)
         {
-            if (cantidad > 0)
-            {
-                if (idioma == IdiomaEnum.Castellano)
-                    return $"{cantidad} {TraducirForma(tipo, cantidad, idioma)} | Area {area:#.##} | Perimetro {perimetro:#.##} <br/>";
-                if (idioma == IdiomaEnum.Italiano)
-                    return $"{cantidad} {TraducirForma(tipo, cantidad, idioma)} | La zona {area:#.##} | Perimetro {perimetro:#.##} <br/>";
+            var nombreForma = TraductorFormas.Traducir(tipo, cantidad, idioma);
+            var linea = new StringBuilder();
 
-                return $"{cantidad} {TraducirForma(tipo, cantidad, idioma)} | Area {area:#.##} | Perimeter {perimetro:#.##} <br/>";
+            linea.Append($"{cantidad} {nombreForma} | Area {area:#.##} | ");
+
+            if (idioma == IdiomaEnum.Castellano)
+            {
+                linea.Append($"Perimetro {perimetro:#.##}");
+            }
+            else if (idioma == IdiomaEnum.Ingles)
+            {
+                linea.Append($"Perimeter {perimetro:#.##}");
+            }
+            else if (idioma == IdiomaEnum.Italiano)
+            {
+                linea.Append($"Perimetro {perimetro:#.##}");
             }
 
-            return string.Empty;
-        }
-
-        private static string TraducirForma(string tipo, int cantidad, IdiomaEnum idioma)
-        {
-            switch (tipo)
-            {
-                case "Cuadrado":
-                    if (idioma == IdiomaEnum.Castellano) return cantidad == 1 ? "Cuadrado" : "Cuadrados";
-                    else if (idioma == IdiomaEnum.Ingles) return cantidad == 1 ? "Square" : "Squares";
-                    else return cantidad == 1 ? "Piazza" : "Piazze";
-                case "Circulo":
-                    if (idioma == IdiomaEnum.Castellano) return cantidad == 1 ? "Círculo" : "Círculos";
-                    else if (idioma == IdiomaEnum.Ingles) return cantidad == 1 ? "Circle" : "Circles";
-                    else return cantidad == 1 ? "Cerchio" : "Cerchi";
-                case "TrianguloEquilatero":
-                    if (idioma == IdiomaEnum.Castellano) return cantidad == 1 ? "Triángulo" : "Triángulos";
-                    else if (idioma == IdiomaEnum.Ingles) return cantidad == 1 ? "Triangle" : "Triangles";
-                    else return cantidad == 1 ? "Triangolo" : "Triangoli";
-                case "Trapecio":
-                    if (idioma == IdiomaEnum.Castellano) return cantidad == 1 ? "Trapecio" : "Trapecios";
-                    else if (idioma == IdiomaEnum.Ingles) return cantidad == 1 ? "Trapeze" : "Trapezoids";
-                    else return cantidad == 1 ? "Trapezio" : "Trapezi";
-            }
-
-            return string.Empty;
+            linea.Append(" <br/>");
+            return linea.ToString();
         }
     }
 }

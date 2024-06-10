@@ -54,7 +54,7 @@ namespace DevelopmentChallenge.Data.Tests
             var trapecio = new List<IFormaGeometrica> { new Trapecio(9.5m, 3.5m, 4) };
             var resumen = FormaGeometrica.Imprimir(trapecio, IdiomaEnum.Italiano);
 
-            Assert.AreEqual("<h1>Rapporto sulle forme</h1>1 Trapezio | La zona 26 | Perimetro 17 <br/>TOTAL:<br/>1 forme Perimetro 17 Area 26", resumen);
+            Assert.AreEqual("<h1>Rapporto sulle forme</h1>1 Trapezio | Area 26 | Perimetro 17 <br/>TOTAL:<br/>1 forme Perimetro 17 Area 26", resumen);
         }
 
         [TestCase]
@@ -133,7 +133,7 @@ namespace DevelopmentChallenge.Data.Tests
             var resumen = FormaGeometrica.Imprimir(formas, IdiomaEnum.Italiano);
 
             Assert.AreEqual(
-                "<h1>Rapporto sulle forme</h1>2 Piazze | La zona 29 | Perimetro 28 <br/>2 Cerchi | La zona 99,16 | Perimetro 48,69 <br/>2 Triangoli | La zona 42 | Perimetro 39 <br/>2 Trapezi | La zona 126 | Perimetro 50 <br/>TOTAL:<br/>8 forme Perimetro 165,69 Area 296,16",
+                "<h1>Rapporto sulle forme</h1>2 Piazze | Area 29 | Perimetro 28 <br/>2 Cerchi | Area 99,16 | Perimetro 48,69 <br/>2 Triangoli | Area 42 | Perimetro 39 <br/>2 Trapezi | Area 126 | Perimetro 50 <br/>TOTAL:<br/>8 forme Perimetro 165,69 Area 296,16",
                 resumen);
         }
     }
