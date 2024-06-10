@@ -49,6 +49,7 @@
     <Compile Include="Classes\FormaGeometrica.cs" />
     <Compile Include="Classes\Trapecio.cs" />
     <Compile Include="Classes\TrianguloEquilatero.cs" />
+    <Compile Include="Enums\IdiomaEnum.cs" />
     <Compile Include="Interfaces\IFormaGeometrica.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
