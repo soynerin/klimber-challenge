@@ -3,11 +3,11 @@ using System;
 using System.Globalization;
 using System.Resources;
 
-namespace DevelopmentChallenge.Data.Classes
+namespace DevelopmentChallenge.Data.Utils
 {
     public static class TraductorFormas
     {
-        private static ResourceManager _manager = new ResourceManager(@"DevelopmentChallenge.Data.Resources.Formas", typeof(TraductorFormas).Assembly);
+        private static ResourceManager _manager = new ResourceManager(@"DevelopmentChallenge.Data.Resources.Res", typeof(TraductorFormas).Assembly);
 
         public static string Traducir(string forma, int cantidad, IdiomaEnum idioma)
         {

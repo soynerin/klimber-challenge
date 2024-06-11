@@ -117,28 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Area" xml:space="preserve">
+    <value>Area</value>
+  </data>
   <data name="Circulo" xml:space="preserve">
-    <value>Círculo</value>
+    <value>Circle</value>
   </data>
   <data name="CirculoPlural" xml:space="preserve">
-    <value>Círculos</value>
+    <value>Circles</value>
   </data>
   <data name="Cuadrado" xml:space="preserve">
-    <value>Cuadrado</value>
+    <value>Square</value>
   </data>
   <data name="CuadradoPlural" xml:space="preserve">
-    <value>Cuadrados</value>
+    <value>Squares</value>
+  </data>
+  <data name="EncabezadoReporte" xml:space="preserve">
+    <value>Shapes report</value>
+  </data>
+  <data name="Formas" xml:space="preserve">
+    <value>shapes</value>
+  </data>
+  <data name="FormatoLinea" xml:space="preserve">
+    <value>{0} {1} | Area {2:#.##} | Perimeter {3:#.##} &lt;br/&gt;</value>
+  </data>
+  <data name="ListaVacia" xml:space="preserve">
+    <value>Empty list of shapes!</value>
+  </data>
+  <data name="Perimetro" xml:space="preserve">
+    <value>Perimeter</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>TOTAL</value>
   </data>
   <data name="Trapecio" xml:space="preserve">
-    <value>Trapecio</value>
+    <value>Trapezoid</value>
   </data>
   <data name="TrapecioPlural" xml:space="preserve">
-    <value>Trapecios</value>
+    <value>Trapezoids</value>
   </data>
   <data name="TrianguloEquilatero" xml:space="preserve">
-    <value>Triángulo</value>
+    <value>Triangle</value>
   </data>
   <data name="TrianguloEquilateroPlural" xml:space="preserve">
-    <value>Triángulos</value>
+    <value>Triangles</value>
   </data>
 </root>

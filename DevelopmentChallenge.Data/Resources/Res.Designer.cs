@@ -22,14 +22,14 @@ namespace DevelopmentChallenge.Data.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Formas {
+    internal class Res {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Formas() {
+        internal Res() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace DevelopmentChallenge.Data.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DevelopmentChallenge.Data.Resources.Formas", typeof(Formas).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DevelopmentChallenge.Data.Resources.Res", typeof(Res).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,15 @@ namespace DevelopmentChallenge.Data.Resources {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area.
+        /// </summary>
+        internal static string Area {
+            get {
+                return ResourceManager.GetString("Area", resourceCulture);
             }
         }
         
@@ -93,6 +102,60 @@ namespace DevelopmentChallenge.Data.Resources {
         internal static string CuadradoPlural {
             get {
                 return ResourceManager.GetString("CuadradoPlural", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reporte de Formas.
+        /// </summary>
+        internal static string EncabezadoReporte {
+            get {
+                return ResourceManager.GetString("EncabezadoReporte", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to formas.
+        /// </summary>
+        internal static string Formas {
+            get {
+                return ResourceManager.GetString("Formas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} {1} | Area {2:#.##} | Perímetro {3:#.##} &lt;br/&gt;.
+        /// </summary>
+        internal static string FormatoLinea {
+            get {
+                return ResourceManager.GetString("FormatoLinea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lista vacía de formas!.
+        /// </summary>
+        internal static string ListaVacia {
+            get {
+                return ResourceManager.GetString("ListaVacia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Perimetro.
+        /// </summary>
+        internal static string Perimetro {
+            get {
+                return ResourceManager.GetString("Perimetro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TOTAL.
+        /// </summary>
+        internal static string Total {
+            get {
+                return ResourceManager.GetString("Total", resourceCulture);
             }
         }
         
